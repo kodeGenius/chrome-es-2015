@@ -13,9 +13,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-'use strict';
+
 
 // Initializes the Sticky Notes app.
+class StickyNotesApp{
+        // Initializes the Sticky Notes app.
+    constructor() {
+        ...
+    }
+
+    // Saves a new sticky note on localStorage.
+    saveNote() {
+        ...
+    }
+
+    // Resets the given MaterialTextField.
+    static resetMaterialTextfield(element) {
+        ...
+    }
+
+    // Creates/updates/deletes a note in the UI.
+    displayNote(key, message) {
+        ...
+    };
+
+    // Enables or disables the submit button depending on the values of the input field.
+    toggleButton() {
+        ...
+    }
+}
+'use strict';
 function StickyNotesApp() {
   // Shortcuts to DOM Elements.
   this.notesContainer = document.getElementById('notes-container');
